@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,KAAK,EAAE,GAAG;EACV,gBAAgB,EAAE,GAAG;CACxB;;AAED,AAAA,QAAQ,CAAC;EACL,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "introduccion.scss"
+    ],
+    "names": [],
+    "file": "introduccion.css"
+}

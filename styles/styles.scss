@@ -1,0 +1,11 @@
+@import "./variables";
+@import "./mixins";
+@import "./header";
+@import "./introduccion";
+@import "./busqueda";
+@import "./tendencias";
+
+* {
+    @include format-document;
+}
+

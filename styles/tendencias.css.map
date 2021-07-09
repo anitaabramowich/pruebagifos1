@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,sBAAsB,CAAA;EAClB,gBAAgB,EAAE,OAAkB;EACpC,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,gBAAgB,CAAA;EACZ,UAAU,EAAE,MAAM;CAErB",
+    "sources": [
+        "tendencias.scss"
+    ],
+    "names": [],
+    "file": "tendencias.css"
+}

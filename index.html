@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <title>Gifos</title>
+</head>
+<body>
+    <header>
+        <div class="linea_cabecera"></div>
+        <div class="contenedor-logo-menu">
+        <div class="container-logo">
+        <img src="imagenes/logo-desktop.svg" alt="logo" class="logo-desktop"></div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="">Modo nocturno</a></li>
+                <li><div class="linea-menu"></div></li>
+                <li><a href="favoritos.html">Favoritos</a></li>
+                <li><div class="linea-menu"></div></li>
+                <li><a href="misgifos.html">Mis GIFOS</a></li>
+                <li><div class="linea-menu"></div></li>
+                <li><button class="boton-agregar">+</button></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onclick="cambiarClase()">
+            <div class="hamburguer"></div>
+        </div>
+    </div>
+    </header>
+
+    <main>
+        <section class="container_titulo">
+            <div class="caja-titulo-mobile">
+                <h1 class="titulo1">Inspirate, busca,</h1> 
+                <h1 class="titulo1">guarda, y crea los</h1> 
+                <div class="caja-titulo2-mobile"> <h1 class="titulo2">mejores</h1>
+                <h1 class="titulo-gifos">GIFOS</h1> </div>
+            </div>
+            <div class="caja-titulo-desktop">
+                <h1 class="titulo1-desktop">Inspírate, busca, guarda, y crea</h1>
+                <div class="caja-titulo2-desktop"><h1 class="titulo2-desktop">los mejores</h1>
+                <h1 class="titulo-gifos-desktop">GIFOS</h1></div>
+                
+            </div> 
+        </section>
+        <section class="container_busqueda">
+            <img src="imagenes/ilustra_header.svg" alt="ilustra_header" class="ilustra_header">
+            <form id="search-form">
+                <input id="search-input" type="text" placeholder="Busca GIFOS y más" autocomplete="off"><button id="searchBtn">
+                    <img src="imagenes/icon-search.svg" alt="search" onclick="changeImage()" class="icon-search" id="icon-search"></button></input>
+                </form>
+                <div id="container-sugerencias" class="container-sugerencias"></div>
+            <div id="contenedor-sugerencias-trendings">
+            <p class="subtitulo-trending">Trending:</p>
+            <div id="caja-texto-trending" class="caja-texto-trending"></div>
+            </div>
+            <div id="contenedor-titulo-busqueda"></div>
+            <div id="results" class="results"></div>   
+            <div id="boton-vermas"></div>
+        </section>
+        <section class="container_trendings">
+            <div class="contenedor-tendencias" id="contenedor-tendencias">
+                <h2 class="titulo-trending">Trending GIFOS</h2>
+                <p class="descripcion-trending">Mira los ultimos</p>
+                <p class="descripcion-trending">GIFOS de nuestra comunidad</p>
+                <div class="slider-contenedor">
+                <div class="card-gifos-trending" id="card-gifos-trending"></div>
+                <div class="card-gifos-trending" id="card-gifos-trending2"></div>
+                <div class="card-gifos-trending" id="card-gifos-trending3"></div>
+                <div class="card-gifos-trending" id="card-gifos-trending4"></div>
+                <div class="card-gifos-trending" id="card-gifos-trending5"></div>
+                <div class="direcciones">
+                    <a href="#contenedor-tendencias" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                    <a href="#contenedor-tendencias" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+                </div>
+                <div class="barras">
+                    <span class="barra active" onclick="posicionSlide(1)"></span>
+                    <span class="barra" onclick="posicionSlide(2)"></span>
+                    <span class="barra" onclick="posicionSlide(3)"></span>
+                    <span class="barra" onclick="posicionSlide(4)"></span>
+                    <span class="barra" onclick="posicionSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
+    <script src="javascript/menu.js"></script>
+    <script src="javascript/busqueda.js"></script>
+    <script src="javascript/trendings.js"></script>
+</body>
+</html>
