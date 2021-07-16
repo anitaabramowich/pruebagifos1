@@ -4,3 +4,8 @@ function cambiarClase() {
     let menuOpen = document.getElementById('menu-toggle');
     menuOpen.classList.toggle('menu-open')
 }
+
+// let botonMas = document.getElementById('boton-mas');
+// botonMas.addEventListener('click', ()=>{
+
+// })

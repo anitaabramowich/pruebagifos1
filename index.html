@@ -16,6 +16,14 @@
         <div class="container-logo">
         <img src="imagenes/logo-desktop.svg" alt="logo" class="logo-desktop"></div>
         <nav id="site-nav" class="site-nav">
+            <!-- <form id="search-form">
+                <input id="search-input-menu" type="text" placeholder="Busca GIFOS y más" autocomplete="off"><button id="searchBtn-menu">
+                    <img src="imagenes/icon-search.svg" alt="search" onclick="changeImage()" class="icon-search" id="icon-search-menu"></button>
+                </form>
+                <div id="container-sugerencias" class="container-sugerencias"></div>
+            <div id="contenedor-titulo-busqueda"></div>
+            <div id="results" class="results"></div>   
+            <div id="boton-vermas"></div> -->
             <ul>
                 <li><a href="">Modo nocturno</a></li>
                 <li><div class="linea-menu"></div></li>
@@ -23,7 +31,7 @@
                 <li><div class="linea-menu"></div></li>
                 <li><a href="misgifos.html">Mis GIFOS</a></li>
                 <li><div class="linea-menu"></div></li>
-                <li><button class="boton-agregar">+</button></li>
+                <li><button class="boton-agregar" id="boton-mas">+</button></li>
             </ul>
         </nav>
         <div id="menu-toggle" class="menu-toggle" onclick="cambiarClase()">
@@ -50,8 +58,9 @@
         <section class="container_busqueda">
             <img src="imagenes/ilustra_header.svg" alt="ilustra_header" class="ilustra_header">
             <form id="search-form">
-                <input id="search-input" type="text" placeholder="Busca GIFOS y más" autocomplete="off"><button id="searchBtn">
-                    <img src="imagenes/icon-search.svg" alt="search" onclick="changeImage()" class="icon-search" id="icon-search"></button></input>
+                <input id="search-input" type="text" placeholder="Busca GIFOS y más" autocomplete="off"><div id="searchBtn">
+                    <img src="imagenes/icon-search.svg" alt="search" class="icon-search" id="icon-search">
+                    <img src="imagenes/close.svg" alt="close" class="icon-close" id="icon-close"></div>
                 </form>
                 <div id="container-sugerencias" class="container-sugerencias"></div>
             <div id="contenedor-sugerencias-trendings">
